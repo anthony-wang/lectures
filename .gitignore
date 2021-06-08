@@ -1,2 +1,11 @@
+TODO
+TODO_*
+.mypy_cache/
 ipynb_checkpoints/
 .ipynb_checkpoints/
+__pycache__/
+.idea/
+usernamepw.py
+cache*.json
+id.py
+.nbgrader.log

@@ -1,0 +1,49 @@
+5.2.3 
+
+(ggplot(barley, aes(x='yield')) 
+ + geom_histogram(binwidth=5)
+)
+
+
+
+5.3.4
+
+barley['site'].value_counts()
+
+(ggplot(barley, aes(x="site", y="yield"))
+ + geom_violin()
+ + geom_jitter(width=0.2)
+)
+
+
+5.4.2
+
+(ggplot(countries, aes(x="GDP", y="Literacy"))
+ + geom_point()
+ + geom_smooth()
+)
+
+
+
+5.6
+
+(ggplot(barley, aes(x="factor(year)", y="yield"))
++ geom_boxplot()
++ facet_wrap("site")
+)
+
+
+6.4
+sns.violinplot(x="variety", y="yield", hue="year", split=True, data=barley)
+
+
+7.3
+
+fig, ax = plt.subplots()
+sns.violinplot(x="variety", y="yield", hue="year", split=True, data=barley, ax=ax)
+ax.set_xticklabels(ax.get_xticklabels(), rotation=35, ha="right");
+
+
+9.3
+
+interact(some_func, fruits=widgets.SelectMultiple(options=known_fruits));
